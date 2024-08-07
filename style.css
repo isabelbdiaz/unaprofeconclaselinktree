@@ -210,6 +210,7 @@ footer{
     .enlacesblog {
         padding: 10px;
         font-size: 18px;
+        width: 70%;
     }
 }
 
@@ -218,5 +219,6 @@ footer{
     .enlacesblog {
         padding: 5px;
         font-size: 16px;
+        width: 70%;
     }
 }
