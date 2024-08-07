@@ -1,0 +1,222 @@
+/* Estilo General*/
+head {
+    <meta name="viewport" content="initial-scale=1.0,
+width=device-width">
+}
+body {
+    background: linear-gradient(to top, #FFA9F9, #FFF7AD) no-repeat;
+    /*Fondo gradiante*/
+    background-size: cover;
+    justify-content: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+}
+img{
+    max-width: 100%;
+}
+/*Estilo logo*/
+.cabecera {
+    display: flex;
+    /* Activa el modelo de caja flexible */
+    flex-direction: column;
+    /* Coloca los elementos en una columna */
+    align-items: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    justify-content: center;
+    /* Centra verticalmente los elementos dentro del contenedor */
+    text-align: center;
+    /* Centra el texto */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cabecera img {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    width: 220px;
+    /* Reducir el ancho de las imágenes */
+    height: auto;
+    /* Mantener la proporción automáticamente */
+    border-radius: 100%;
+    /* Redondea los bordes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra suave */
+    transition: transform 0.3s ease;
+}
+
+/* Estilo Título*/
+.titulo {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 0%;
+    text-decoration: none;
+}
+
+/* Estilo Subtítulo*/
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: Light;
+    margin-bottom: 0%;
+    text-decoration: none;
+}
+
+/* Estilo redes sociales*/
+.texto {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.redes-sociales {
+    display: flex;
+    /* Activa el modelo de caja flexible */
+    justify-content: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    margin: 0 40px;
+    /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+.redes-sociales img {
+    display: inline;
+    /* Convierte la imagen en un bloque */
+    width: 60px;
+    /* Reducir el ancho de las imágenes */
+    height: auto;
+    /* Mantener la proporción automáticamente */
+    margin: 0 15px;
+    /* Espacio entre las imágenes */
+    align-items: center;
+    margin: 20 auto;
+    /* Centra horizontalmente usando márgenes automáticos */
+    border-radius: 100px;
+    /* Redondea los bordes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra suave */
+    transition: transform 0.3s ease;
+}
+.redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Estilo enlaces de interés*/
+.enlaces {
+    justify-content: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    margin: 0 40px;
+    /* Espacio entre las imágenes */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.enlaces img {
+    width: 500px;
+    /* Reducir el ancho de las imágenes */
+    height: auto;
+    /* Mantener la proporción automáticamente */
+    border-radius: 30px;
+    /* Redondea los bordes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra suave */
+    transition: transform 0.3s ease;
+}
+.enlaces img:hover {
+    transform: scale(1.1);
+}
+
+.enlacesblog {
+    display: flex; /* Cambiado de flexbox a flex */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    width: 400px; /* Ancho del contenedor */
+    margin: 20px auto; /* Espacio alrededor del contenedor y centrado */
+    padding: 20px 40px; /* Espacio dentro del contenedor */
+    background-color: #FFF7AD; /* Color de fondo */
+    border-radius: 17px; /* Bordes redondeados */
+    box-shadow: 0 0 600px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+.enlacesblog a{
+    text-decoration: none;
+}
+.enlacesblog a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.enlacesblog:hover {
+    transform: scale(1.02);
+    /* Aumenta el tamaño del botón al pasar el ratón */
+}
+.cabecera img:hover {
+    transform: scale(1.02);
+    /* Aumenta el tamaño del botón al pasar el ratón */
+    box-shadow: 0 0 20px #FFA9F9;
+}
+footer{
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .titulo {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .subtitulo {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .cabecera img {
+        width: 180px; /* Ajuste del tamaño de la imagen */
+    }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media (max-width: 400px) {
+    .cabecera img {
+        width: 140px; /* Ajuste del tamaño de la imagen */
+    }
+}
+@media (max-width: 600px) {
+    .enlacesblog {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media (max-width: 400px) {
+    .enlacesblog {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
