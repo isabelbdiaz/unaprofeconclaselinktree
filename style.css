@@ -1,8 +1,4 @@
 /* Estilo General*/
-head {
-    <meta name="viewport" content="initial-scale=1.0,
-width=device-width">
-}
 body {
     background: linear-gradient(to top, #FFA9F9, #FFF7AD) no-repeat;
     /*Fondo gradiante*/
@@ -160,6 +156,7 @@ img{
 }
 .enlacesblog a{
     text-decoration: none;
+        color: black;
 }
 .enlacesblog a:visited {
     color: black;
@@ -168,6 +165,7 @@ img{
 
 .enlacesblog:hover {
     transform: scale(1.02);
+        color: black;
     /* Aumenta el tamaño del botón al pasar el ratón */
 }
 .cabecera img:hover {
