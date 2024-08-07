@@ -71,6 +71,7 @@ img{
 /* Estilo redes sociales*/
 .texto {
     color: black;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     font-weight: bold;
     display: flex;
@@ -148,6 +149,7 @@ img{
     border-radius: 17px; /* Bordes redondeados */
     box-shadow: 0 0 600px rgba(0, 0, 0, 0.1); /* Sombra suave */
     color: black;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: lighter;
     transition: transform 0.2s ease;
@@ -174,6 +176,7 @@ img{
     box-shadow: 0 0 20px #FFA9F9;
 }
 footer{
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 20px;
