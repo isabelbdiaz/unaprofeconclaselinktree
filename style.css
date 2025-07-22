@@ -1,224 +1,201 @@
 /* Estilo General*/
+/* ---------- ESTILOS GENERALES ---------- */
 body {
-    background: linear-gradient(to top, #FFA9F9, #FFF7AD) no-repeat;
-    /*Fondo gradiante*/
-    background-size: cover;
-    justify-content: center;
-    /* Centra horizontalmente los elementos dentro del contenedor */
-    text-align: center;
-    box-sizing: border-box;
-    text-decoration: none;
-    min-width: 50%;
-    height: auto;
-}
-img{
-    max-width: 100%;
-}
-/*Estilo logo*/
-.cabecera {
-    display: flex;
-    /* Activa el modelo de caja flexible */
-    flex-direction: column;
-    /* Coloca los elementos en una columna */
-    align-items: center;
-    /* Centra horizontalmente los elementos dentro del contenedor */
-    justify-content: center;
-    /* Centra verticalmente los elementos dentro del contenedor */
-    text-align: center;
-    /* Centra el texto */
-    margin-bottom: 20px;
-    margin-top: 20px;
+  background-image: url("images/fondo.png"); /* Ruta de tu imagen */
+  background-attachment: fixed;              /* Fondo fijo al hacer scroll */
+  background-position: center;               /* Centrado */
+  background-repeat: no-repeat;              /* No repetir */
+  background-size:cover;                /* Cubrir todo el fondo */
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  font-family: 'Georgia', serif;
 }
 
-.cabecera img {
-    display: flex;
-    justify-content: center;
-    /* Centrado horizontal */
-    width: 220px;
-    /* Reducir el ancho de las imágenes */
-    height: auto;
-    /* Mantener la proporción automáticamente */
-    border-radius: 100%;
-    /* Redondea los bordes */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
-    transition: transform 0.3s ease;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Estilo Título*/
-.titulo {
-    display: flex;
-    justify-content: center;
-    /* Centrado horizontal */
-    font-family: Georgia, serif;
-    font-weight: bold;
-    margin-bottom: 0%;
-    text-decoration: none;
+/* ---------- ENCABEZADO ---------- */
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-/* Estilo Subtítulo*/
-.subtitulo {
-    display: flex;
-    justify-content: center;
-    /* Centrado horizontal */
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: Light;
-    margin-bottom: 0%;
-    text-decoration: none;
+.encabezado img {
+  width: 10rem;
+  border-radius: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-/* Estilo redes sociales*/
-.texto {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    text-decoration: none;
+.encabezado img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #e03ba1;
 }
 
-.redes-sociales {
-    display: flex;
-    /* Activa el modelo de caja flexible */
-    justify-content: center;
-    /* Centra horizontalmente los elementos dentro del contenedor */
-    margin: 0 40px;
-    /* Espacio entre las imágenes */
-    margin-bottom: 20px;
-}
-.redes-sociales img {
-    display: inline;
-    /* Convierte la imagen en un bloque */
-    width: 60px;
-    /* Reducir el ancho de las imágenes */
-    height: auto;
-    /* Mantener la proporción automáticamente */
-    margin: 0 15px;
-    /* Espacio entre las imágenes */
-    align-items: center;
-    margin: 20 auto;
-    /* Centra horizontalmente usando márgenes automáticos */
-    border-radius: 100px;
-    /* Redondea los bordes */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
-    transition: transform 0.3s ease;
-}
-.redes-sociales img:hover {
-    transform: scale(1.1);
+.encabezado h1,
+.encabezado h2, .text {
+  margin: 0.5rem 0;
+  padding: 0 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e03ba1;
+  text-shadow: 2px 2px 5px rgb(255, 223, 248);
 }
 
-
-/* Estilo enlaces de interés*/
-.enlaces {
-    justify-content: center;
-    /* Centra horizontalmente los elementos dentro del contenedor */
-    margin: 0 40px;
-    /* Espacio entre las imágenes */
-    text-align: center;
-    margin-bottom: 20px;
+.encabezado h1 {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-.enlaces img {
-    width: 500px;
-    /* Reducir el ancho de las imágenes */
-    height: auto;
-    /* Mantener la proporción automáticamente */
-    border-radius: 30px;
-    /* Redondea los bordes */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
-    transition: transform 0.3s ease;
+.encabezado h2 {
+  font-weight:500;
+  font-size: 1.2rem;
 }
-.enlaces img:hover {
-    transform: scale(1.1);
+
+.text {
+font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* ---------- REDES SOCIALES ---------- */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 10px;
+  flex-wrap: nowrap;
+}
+
+.redes img {
+ display: inline-block;
+  width: 5rem;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e03ba1;
+}
+
+/* ---------- DESTACADOS ---------- */
+.tienda {
+  text-align: center;
+  padding: 30px 20px;
+  display:block
+  
+}
+
+.tienda-img {
+width: 100%;       /* ✅ Usa todo el ancho del contenedor .tienda */
+  max-width: 830px; /* ✅ Igual al tope visual que tendrá .galeria */
+  margin: 0 auto 30px auto; /* ✅ Centrado con margen inferior */
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.tienda-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #e03ba1;
+}
+
+/* ---------- GALERÍA DE PRODUCTOS ---------- */
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFF7AD;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  max-width: 830px; /* igual que la tienda-img */
+  box-sizing: border-box;
+}
+
+.producto {
+  flex: 0 1 calc(33.33% - 13.33px); /* 3 elementos con gap de 20px */
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e03ba1;
+}
+
+/* ---------- BLOG ---------- */
+.blog {
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2rem;
+  color: #d81b60;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .enlacesblog {
-    display: flex; /* Cambiado de flexbox a flex */
-    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    width: 400px; /* Ancho del contenedor */
-    margin: 20px auto; /* Espacio alrededor del contenedor y centrado */
-    padding: 20px 40px; /* Espacio dentro del contenedor */
-    background-color: #FFF7AD; /* Color de fondo */
-    border-radius: 17px; /* Bordes redondeados */
-    box-shadow: 0 0 600px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: lighter;
-    transition: transform 0.2s ease;
-    overflow: hidden;
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-}
-.enlacesblog a{
-    text-decoration: none;
-        color: black;
-}
-.enlacesblog a:visited {
-    color: black;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.enlacesblog:hover {
-    transform: scale(1.02);
-        color: black;
-    /* Aumenta el tamaño del botón al pasar el ratón */
-}
-.cabecera img:hover {
-    transform: scale(1.02);
-    /* Aumenta el tamaño del botón al pasar el ratón */
-    box-shadow: 0 0 20px #FFA9F9;
-}
-footer{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-/* Media query para pantallas más pequeñas */
-@media (max-width: 600px) {
-    .titulo {
-        padding: 10px;
-        font-size: 18px;
-    }
-}
-@media (max-width: 600px) {
-    .subtitulo {
-        padding: 10px;
-        font-size: 18px;
-    }
-}
-/* Media query para pantallas más pequeñas */
-@media (max-width: 600px) {
-    .cabecera img {
-        width: 180px; /* Ajuste del tamaño de la imagen */
-    }
+.enlacesblog a {
+  background-color: #FFF7AD;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  font-size: 1rem;
+  min-width: 100px;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Media query para pantallas aún más pequeñas */
-@media (max-width: 400px) {
-    .cabecera img {
-        width: 140px; /* Ajuste del tamaño de la imagen */
-    }
-}
-@media (max-width: 600px) {
-    .enlacesblog {
-        padding: 10px;
-        font-size: 18px;
-        width: 70%;
-    }
+.enlacesblog a:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(224, 59, 161, 0.3);
+  background-color: #ffe5f1;
+  color: #d81b60;
 }
 
-/* Media query para pantallas aún más pequeñas */
-@media (max-width: 400px) {
-    .enlacesblog {
-        padding: 5px;
-        font-size: 16px;
-        width: 70%;
-    }
+/* ---------- FOOTER ---------- */
+footer {
+  font-weight: bold;
+  margin: 40px 0 20px;
 }
